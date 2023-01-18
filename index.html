@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+            integrity=
+    "sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer"></script>
+        <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+            integrity=
+    "sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer"></script>
+</head>
+
+<body >
+    <div class="container">
+        <div class="statusContainer">
+            <img draggable="none"src="./statusBar.svg" class="status" />
+        </div>
+        <div class="hamburgerContainer">
+            <button onclick="tooltip()">
+                <img draggable="none"src="./ham.svg" class="ham" />
+                <h3 id="tooltip" class="tooltips">This is just a design don't expect more :)</h3>
+            </button>
+        </div>
+        <div class="numeralArea">
+         <input type="text"  class="inputbox" id="result"/>
+        </div>
+        <div class="bottomContainer" id="bottomContainer">
+            <div class="numeralContainer">
+              <button  onclick="clr()" style="color: #5A5FDC;">AC</button>
+              <button      value="/" onclick="display('/')" style="color: #5A5FDC;">&#247;</button>
+              <button      value="*" onclick="display('x')" style="color: #5A5FDC;">x</button>
+              <button      value="7" onclick="display('7')">7</button>
+              <button      value="8" onclick="display('8')">8</button>
+              <button      value="9" onclick="display('9')">9</button>
+              <button      value="4" onclick="display('4')">4</button>
+              <button      value="5" onclick="display('5')">5</button>
+              <button      value="6" onclick="display('6')">6</button>
+              <button      value="1" onclick="display('1')">1</button>
+              <button      value="2" onclick="display('2')">2</button>
+              <button      value="3" onclick="display('3')">3</button>
+              <button      value="00" onclick="display('00')">00</button>
+              <button      value="0" onclick="display('0')">0</button>
+              <button      value="." onclick="display('.')">.</button>
+            </div>
+            <div class="OperatorContainer">
+                <button  onclick="clrOne()">c</button>
+                <button      value="-" onclick="display('-')">-</button>
+                <button      value="+" onclick="display('+')">+</button>
+                <button onclick="solve()" id="equals">=</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

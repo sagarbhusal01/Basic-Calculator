@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+button
+{
+    background-color: transparent;
+    border: none;
+}
+button:focus
+{
+    outline: none !important;
+}
+body {
+  background-color: #6584bc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  user-select: none;
+}
+.container {
+  height: 720px;
+  width: 339.8px;
+  background-color: #292e37;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.statusContainer {
+  margin-top: 5px;
+  display: flex;
+}
+.status {
+  width: 340px;
+  margin-left: -4px;
+}
+.hamburgerContainer {
+  margin: 10px;
+  margin-top: 15px;
+}
+.ham {
+  fill: white;
+  height: 30px;
+}
+
+
+.numeralArea {
+  position: relative;
+  top: 70px;
+}
+.inputbox {
+  height: 150px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  direction: rtl;
+  font-size: 35px;
+
+}
+.inputbox:focus {
+  outline: none !important;
+}
+
+
+.bottomContainer {
+  height: 395px;
+  width: 350px;
+  position: relative;
+  top: 75px;
+  left: -3px;
+  display: flex;
+}
+.numeralContainer {
+  height: 98.5%;
+  width: 75%;
+}
+.OperatorContainer {
+  height: 98.5%;
+  width: 23%;
+}
+.numeralContainer > button {
+  height: 70px;
+  width: 75px;
+  border: none;
+  background-color: #2f3747;
+  border-radius: 10px;
+  margin: 4px;
+  color: white;
+  font-size: 22px;
+}
+.OperatorContainer > button {
+  height: 70px;
+  width: 75px;
+  border: none;
+  background-color: #5a5fdc;
+  border-radius: 10px;
+  color: white;
+  margin: 4px;
+  font-size: 22px;
+}
+#equals {
+  height: 150px;
+}
+
+.tooltips
+{
+    display: none;
+    position: absolute;
+    color: white;
+    margin-top: 10px;
+}
